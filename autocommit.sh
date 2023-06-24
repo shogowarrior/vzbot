@@ -18,8 +18,8 @@ push_config(){
   cd $config_folder
 
   mkdir -p backup_configs
-  mv printer[0-9]*-* backup_configs
-  mv *.moonraker.conf.bkp backup_configs 
+  mv printer*-* backup_configs
+  mv *moonraker.conf.bkp backup_configs 
 
   git pull origin $branch
   git add .
