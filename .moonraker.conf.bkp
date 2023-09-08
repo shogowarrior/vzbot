@@ -22,6 +22,9 @@ cors_domains =
 
 [octoprint_compat]
 
+[file_manager]
+enable_object_processing = True
+
 [history]
 
 [update_manager]
@@ -40,4 +43,12 @@ type = web
 channel = stable
 repo = mainsail-crew/mainsail
 path = ~/mainsail
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
 
